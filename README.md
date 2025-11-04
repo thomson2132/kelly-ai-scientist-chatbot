@@ -240,7 +240,7 @@ Free to use for educational and personal projects.
 
 ## 👨‍💻 Project Author
 
-Created as a Generative AI course assignment at [Your University].
+Created as a Generative AI course assignment at Digital University Kerala.
 
 ## 🙏 Acknowledgments
 
