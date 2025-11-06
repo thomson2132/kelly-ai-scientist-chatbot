@@ -1,9 +1,9 @@
 import streamlit as st
-from dotenv import load_dotenv  # Add this import
+from dotenv import load_dotenv
 import os
 
 # Load environment variables from .env file
-load_dotenv()  # Add this line
+load_dotenv()
 
 from utils.poem_generator import generate_kelly_response
 
@@ -45,24 +45,8 @@ if prompt := st.chat_input("Ask Kelly a question..."):
     # Add assistant response to chat history
     st.session_state.messages.append({"role": "assistant", "content": response})
 
-# Sidebar with information
-with st.sidebar:
-    st.header("About Kelly")
-    st.write("""
-    Kelly is an AI scientist who responds to all queries in poetic form.
-    
-    **Characteristics:**
-    - 🔍 Skeptical of broad AI claims
-    - 📊 Evidence-based suggestions
-    - 🎭 Professional yet poetic
-    - 🧠 Analytical thinking
-    """)
-    
-    # Display stats
-    if st.session_state.messages:
-        st.divider()
-        st.metric("Messages", len(st.session_state.messages))
-    
-    if st.button("Clear Chat History"):
-        st.session_state.messages = []
-        st.rerun()
+# Clear chat history button below chat box
+st.divider()
+if st.button("🗑️ Clear Chat History", use_container_width=True):
+    st.session_state.messages = []
+    st.rerun()
