@@ -32,24 +32,6 @@ Kelly is a unique chatbot designed for a Generative AI course assignment. Unlike
 | **Hosting** | Streamlit Community Cloud | Free cloud deployment |
 | **Version Control** | Git & GitHub | Repository management |
 
-## 📁 Project Structure
-
-kelly-ai-scientist-chatbot/
-├── app.py # Main Streamlit application interface
-├── requirements.txt # Python dependencies
-├── README.md # Project documentation
-├── .env # API key configuration (local only)
-├── .gitignore # Git ignore rules
-│
-├── utils/
-│ ├── init.py # Package initializer
-│ ├── poem_generator.py # Groq API integration & response generation
-│ └── prompts.py # Kelly's personality & system prompt
-│
-└── config/
-├── init.py # Package initializer
-└── settings.py # Configuration parameters & model settings
-
 
 ## 🚀 Quick Start
 
