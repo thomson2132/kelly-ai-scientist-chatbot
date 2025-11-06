@@ -15,7 +15,7 @@ st.set_page_config(
 )
 
 
-st.title("🧪 Kelly - The AI Scientist Poet")
+st.title("Kelly - The AI Scientist Poet")
 st.markdown("*Ask me anything, and I'll respond in verse with skeptical wisdom*")
 
 
